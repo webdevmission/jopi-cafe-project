@@ -1,4 +1,4 @@
-body {
+/* body {
   background: grey;
 
   @media (min-width: 768px) {
@@ -26,4 +26,58 @@ img {
 
 h2 {
   font-size: var(--h2-font-size);
+} */
+
+body {
+  background: #ffffff;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+
+  /* <STYLE GUIDE MOBILE> */
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 1.1;
+  font-weight: 900;
+
+  @media (min-width: 768px) {
+    font-size: 96px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.1;
+  font-weight: 900;
+
+  @media (min-width: 768px) {
+    font-size: 48px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 900;
+
+  @media (min-width: 768px) {
+    font-size: 42px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

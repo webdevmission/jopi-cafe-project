@@ -1,0 +1,33 @@
+<!-- work in progress by Joscha
+
+$ git Status
+    -> Zeigt den aktuellen Status von Git und den vorgefundenen Dateien. Ob beispielsweise Dateien modified wurden, ob ein aktueller merged stattfindet usw.
+
+$ git add test-datei.html
+    -> Erwähnte Datei wird Git hinzugefügt
+
+$ git add -A
+    -> Alles, in denen Veränderungen vorgenommen wurden, werden zu Git hinzugefügt
+
+$ git add -p
+    -> Ein add als Patch, in dem man genau auf die Zeile bestimmen kann welche Änderung in ein Commit geladen werden
+    -> y( yes) n(no)
+
+$ git pull {
+    $ git fetch
+    -> download vom aktuellem Commit aus dem GitHub repository 
+    $ git merged
+        -> Verschiedene Änderungen werden in ein Commit zusammengefügt. Wenn Änderungen aus verschiedenen Dateien im Konflikt stehen, geht man pro ganze Datei einzeln durch welche Änderungen davon in das Commit geladen werden sollen.
+}
+
+$ git rebase
+    -> Die Änderungen werden als gesondertes Commit geladen. Ohne mehrere Änderungen aus verschiedenen Dateien in das Commit zusammenzufügen wie bei einem merged
+
+$ git commit
+    -> Einen Commit von den geaddeten Verädnerungen erstellen. "^" bedeutet STRG.
+
+$ git Push
+    ->  Lokaler Commit wird zum GitHub Repository hochgeladen. Andere Teammitglieder können jetzt das Hochgeladene nun pullen. Vorraussetzung: abgeschlossenes git merged oder git rebase.
+
+$ git Log
+    -> Zeigt bisherige Git Vorgänge auf -->
