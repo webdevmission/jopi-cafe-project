@@ -2,21 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index Page</title>
-    <link rel="stylesheet" href="/css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Oregano"
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=aguafina-script:400|roboto:400,900|vt323:400"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Startseite</title>
   </head>
+  <!-- |||| homepage |||| -->
   <body>
-    {{> header }}
-    <h1>Hello World Test!</h1>
-    <main>
-      <a href="/sub-page/">Link to Subpage</a>
-      <div>Home</div>
-    </main>
-    <script src="/js/index.js" type="module"></script>
+    <!-- {{> header }} -->
+    <!-- <script src="/js/index.js" type="module"></script> -->
+
+    <!-- ||| hero ||| -->
+    <header class="header">
+      <!-- make navbar sticky -->
+      <nav class="nav">
+        <ul class="nav__ul">
+          <li class="nav__ul_item nav__ul_item--#">icon</li>
+          <li class="nav__ul_item nav__ul_item--#">icon</li>
+        </ul>
+      </nav>
+
+      <div class="header__h1-info-container--position">
+        <h1 class="header__h1">Rustica</h1>
+        <p class="header__info">Bio und Fair seit 1991</p>
+      </div>
+
+      <a class="button button--#" href="#">Shop</a>
+    </header>
+    <main></main>
+    <footer></footer>
   </body>
 </html>

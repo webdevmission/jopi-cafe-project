@@ -1,6 +1,7 @@
 :root {
   /* Colors */
-  --div-color: red;
+  --font-color-white: #ffffff;
+  --font-color-black: #000000;
 
   /* Text Styles */
   --h2-font-size: 26px;

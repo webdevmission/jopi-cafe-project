@@ -28,13 +28,12 @@ h2 {
   font-size: var(--h2-font-size);
 } */
 
+/* Font-size pixel in rem umwandeln */
+
 body {
   background: #ffffff;
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  list-style-type: none;
-  text-decoration: none;
 
   /* <STYLE GUIDE MOBILE> */
   font-family: "Roboto", sans-serif;
@@ -45,6 +44,14 @@ body {
   @media (min-width: 768px) {
     font-size: 18px;
   }
+}
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 h1 {
