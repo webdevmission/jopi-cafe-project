@@ -4,8 +4,7 @@
 
 /* |||| homepage |||| */
 
-/* ||| hero ||| */
-
+/* ||| header ||| */
 .header {
   /* do we need width: auto or 100%? */
   height: 75vh;
@@ -26,6 +25,7 @@
   align-items: center;
 }
 
+/* | navigation | */
 /* nav position at top of page, consider to change to fixed/sticky  */
 .nav {
   width: 100%;
@@ -49,6 +49,7 @@
   height: 1.5rem;
 }
 
+/* | h1-info | */
 .header__h1-info-container--position {
   text-align: center;
 }
@@ -57,6 +58,7 @@
   margin: 0;
 }
 
+/* | button | */
 /* considered to be a future Sass mixin/variable */
 .button {
   width: 10rem;
@@ -80,4 +82,64 @@
 
 .button:active {
   background-color: rgb(215, 190, 157);
+}
+
+/*button:hover & button:active will be coded in Sass with nesting */
+/* ||| main ||| */
+.main {
+  width: 100%;
+}
+
+/* || section-one || */
+
+.main__section-one {
+  width: 100%;
+  margin: 3.75rem 0;
+}
+
+.section--horizontal-margin {
+  padding: 0 1.5rem;
+}
+
+/* | article | */
+.article {
+  width: 100%;
+}
+
+.article__position--margin {
+  margin: 1.25rem 0;
+}
+
+.article__openeing-time--flex {
+  display: flex;
+  gap: 2rem;
+}
+
+.article__opening-time_adress--width {
+  width: 19ch;
+}
+
+.article__opening-time_office-hours--width {
+  width: 13ch;
+}
+
+.article__img {
+  width: 75%;
+  height: auto;
+}
+
+.article__img--margin {
+  display: block;
+  margin: 3.75rem 0;
+}
+
+.article__img--horizontal-margin {
+  margin-left: 25%;
+}
+
+/* || section-two || */
+
+.section-two {
+  background: rgb(26, 26, 26);
+  margin: 1.25 0;
 }
