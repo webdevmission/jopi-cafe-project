@@ -12,7 +12,7 @@
 
   color: var(--font-color-white);
 
-  background-image: url("../images/hero-background.jpg");
+  background-image: url("../images/img/header-background.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -23,6 +23,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 /* | navigation | */
@@ -36,6 +37,10 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
+
+  /* todo: fix z-index-workaround */
+  z-index: 1;
+
   padding: 0.75rem 1.5rem;
 }
 
@@ -71,8 +76,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 33%;
 }
 
 /*button:hover & button:active will be coded in Sass with nesting */
@@ -84,7 +87,11 @@
   background-color: rgb(215, 190, 157);
 }
 
-/*button:hover & button:active will be coded in Sass with nesting */
+.button--section-one_position {
+  position: absolute;
+  bottom: 15%;
+}
+
 /* ||| main ||| */
 .main {
   width: 100%;
@@ -142,4 +149,5 @@
 .section-two {
   background: rgb(26, 26, 26);
   margin: 1.25 0;
+  position: relative;
 }
