@@ -59,7 +59,7 @@
       <!-- || section-one || -->
       <section class="main__section-one section--horizontal-margin">
         <!-- | article | -->
-        <article class="article article__text_openeing-time_img">
+        <article class="article article__text_opening-time_img">
           <h2 class="article__position--margin">Rösterei & Café</h2>
 
           <p class="article__position--margin">
@@ -67,7 +67,7 @@
             Rösterei, serviert im gemütlichen Café in der Innenstadt.
           </p>
 
-          <div class="article__openeing-time--flex article__position--margin">
+          <div class="article__opening-time--flex article__position--margin">
             <div class="article__opening-time_adress--width">
               Komm uns besuchen! Frauenhoferstr. 13, Kiel
             </div>
@@ -111,26 +111,49 @@
       </section>
 
       <!-- || section-two || -->
-      <section class="section-two">
+      <section class="main__section-two">
         <!-- | h2 | -->
-        <h2>Entdecke unsere Kaffee Sorten</h2>
+        <h2 class="main__section-two_h2--width">
+          Entdecke unsere Kaffee Sorten
+        </h2>
 
         <!-- | shop-preview | -->
-        <div>
+        <div class="shop-preview">
           <!-- todo: finish prototype and replicate three times -->
-          <div>
-            <img src="images/img/shop-product.png" alt="Shop Produkt" />
-            <div>
-              <p>Costa Rica <span>6,90€ – 26,90€</span></p>
-              <img src="" alt="" />
-              <img src="" alt="" />
-              <img src="" alt="" />
+          <div class="shop-preview__product">
+            <img
+              class="shop-preview__product_img"
+              src="images/img/shop-product.png"
+              alt="Shop Produkt"
+            />
+            <div class="shop-preview__product_info">
+              <p class="shop-preview__product_info_origin--font-size">
+                Costa Rica
+              </p>
+              <p class="shop-preview__product_info_price--color">
+                6,90€ – 26,90€
+              </p>
+              <img
+                class="shop-preview__product_info_icon--size"
+                src="images/icons-svg/coffee-beans.svg"
+                alt="Kaffeebohnen"
+              />
+              <img
+                class="shop-preview__product_info_icon--size"
+                src="images/icons-svg/french-press.svg"
+                alt="Frenchpress"
+              />
+              <img
+                class="shop-preview__product_info_icon--size"
+                src="images/icons-svg/coffee-scoop.svg"
+                alt="Kaffeeschaufel"
+              />
             </div>
           </div>
         </div>
 
         <!-- | section-two__button | -->
-        <button class="button button--section-one_position">
+        <button class="button button--section-two_position">
           alle Produkte
         </button>
 

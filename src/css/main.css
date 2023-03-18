@@ -117,7 +117,7 @@
   margin: 1.25rem 0;
 }
 
-.article__openeing-time--flex {
+.article__opening-time--flex {
   display: flex;
   gap: 2rem;
 }
@@ -146,8 +146,45 @@
 
 /* || section-two || */
 
-.section-two {
+.main__section-two {
   background: rgb(26, 26, 26);
   margin: 1.25 0;
   position: relative;
+  color: var(--font-color-white);
+}
+
+.main__section-two_h2--width {
+  width: 15ch;
+}
+
+/* todo: calculate width in context to main__section-two padding */
+.shop-preview {
+  width: 100%;
+}
+
+/* todo: calculate width in context to gap */
+.shop-preview__product {
+  width: 50%;
+}
+
+.shop-preview__product_img {
+  background: rgb(255, 255, 255);
+}
+
+.shop-preview__product_info {
+}
+
+.shop-preview__product_info_origin--font-size {
+  font-size: 1.125rem;
+}
+
+.shop-preview__product_info_price--color {
+  color: rgb(115, 115, 115);
+}
+
+.shop-preview__product_info_icon--size {
+  width: 0.5rem;
+}
+
+.button--section-two_position {
 }
