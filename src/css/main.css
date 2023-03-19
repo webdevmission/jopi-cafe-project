@@ -148,9 +148,12 @@
 
 .main__section-two {
   background: rgb(26, 26, 26);
-  margin: 1.25 0;
-  position: relative;
   color: var(--font-color-white);
+
+  position: relative;
+
+  margin: 1.25 0;
+  padding: 3.75rem 1.5rem;
 }
 
 .main__section-two_h2--width {
@@ -158,13 +161,18 @@
 }
 
 /* todo: calculate width in context to main__section-two padding */
+/* todo: inspect column-gap issue in dev-tools */
 .shop-preview {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* column-gap: 1rem; */
+  row-gap: 2.5rem;
 }
 
 /* todo: calculate width in context to gap */
 .shop-preview__product {
-  width: 50%;
+  width: calc(50% - 1rem);
 }
 
 .shop-preview__product_img {
@@ -182,8 +190,18 @@
   color: rgb(115, 115, 115);
 }
 
-.shop-preview__product_info_icon--size {
-  width: 0.5rem;
+/* todo: change svg-icon to bigger stroke-weight/size */
+.shop-preview__product_info_icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.25rem;
+
+  filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(23%)
+    hue-rotate(325deg) brightness(104%) contrast(101%);
+}
+
+.shop-preview__product_info_icon-french-press--margin {
+  margin: 0.25rem 0.25rem 0;
 }
 
 .button--section-two_position {
