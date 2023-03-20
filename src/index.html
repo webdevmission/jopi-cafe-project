@@ -57,17 +57,17 @@
     <!-- ||| main ||| -->
     <main class="main">
       <!-- || section-one || -->
-      <section class="main__section-one section--horizontal-margin">
+      <section class="main__section-one">
         <!-- | article | -->
         <article class="article article__text_opening-time_img">
-          <h2 class="article__position--margin">Rösterei & Café</h2>
+          <h2 class="article--margin-vertical">Rösterei & Café</h2>
 
-          <p class="article__position--margin">
+          <p class="article--margin-vertical">
             Kaffee aus Kiel, direkt gehandelt und geröstet in der eigenen
             Rösterei, serviert im gemütlichen Café in der Innenstadt.
           </p>
 
-          <div class="article__opening-time--flex article__position--margin">
+          <div class="article__opening-time--flex article--margin-vertical">
             <div class="article__opening-time_adress--width">
               Komm uns besuchen! Frauenhoferstr. 13, Kiel
             </div>
@@ -89,9 +89,9 @@
 
         <!-- | article | -->
         <article class="article article__text_img">
-          <h2 class="article__position--margin">Bio und Fair</h2>
+          <h2 class="article--margin-vertical">Bio und Fair</h2>
 
-          <p class="article__position--margin">
+          <p class="article--margin-vertical">
             Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
             Konsonantien leben die Blindtexte. Weit hinten, hinter den
             Wortbergen, fern der Länder Vokalien und Konsonantien leben die
@@ -119,7 +119,7 @@
         </h2>
 
         <!-- | shop-preview | -->
-        <div class="shop-preview">
+        <div class="shop-preview shop-preview--margin-vertical">
           <!-- todo: finish prototype and replicate three times -->
           <div class="shop-preview__product">
             <img
@@ -127,7 +127,7 @@
               src="images/img/shop-product.png"
               alt="Shop Produkt"
             />
-            <div class="shop-preview__product_info">
+            <div>
               <p class="shop-preview__product_info_origin--font-size">
                 Costa Rica
               </p>
@@ -244,11 +244,75 @@
         </div>
 
         <!-- | section-two__button | -->
-        <button class="button button--section-two_position">
+        <a
+          class="button button_section-two--border button_section-two--position"
+        >
           alle Produkte
-        </button>
+        </a>
       </section>
     </main>
+
+    <!-- || section-three || -->
+    <section class="main__section-three">
+      <h3>Herkunft</h3>
+      <pre
+        class="main__section-three_text main__section-three_text--margin-vertical"
+      >
+  Weit hinten, hinter den Wortbergen,
+       fern der Länder Vokalien und
+   Konsonantien leben die Blindtexte.
+  Und das alles in bester Bio Qualität</pre
+      >
+      <a href="#" class="main__section-three_origin-info">mehr</a>
+    </section>
+
+    <!-- || section-four || -->
+    <section class="main__section-four">
+      <h2 class="main__section-four_h2 main__section-four--margin-vertical">
+        Das steckt drin
+      </h2>
+
+      <img
+        class="main__section-four_product_img main__section-four--margin-vertical"
+        src="images/img/shop-product.png"
+        alt="Shop Produkt"
+      />
+
+      <div
+        class="main__section-four_product_info main__section-four--margin-vertical"
+      >
+        <div class="main__section-four_product_feature">
+          <img
+            class="main__section-four_product_feature_icon main__section-four_product_feature_icon--margin-vertical"
+            src="images/icons-svg/coffee-cup.svg"
+            alt="Icon"
+          />
+          <p class="main__section-four_product_feature_text">
+            Bester Geschmack
+          </p>
+        </div>
+        <div class="main__section-four_product_feature">
+          <img
+            class="main__section-four_product_feature_icon main__section-four_product_feature_icon--margin-vertical"
+            src="images/icons-svg/coffee-scoop.svg"
+            alt="Icon"
+          />
+          <p class="main__section-four_product_feature_text">Fair gehandelt</p>
+        </div>
+        <div class="main__section-four_product_feature">
+          <img
+            class="main__section-four_product_feature_icon main__section-four_product_feature_icon--margin-vertical"
+            src="images/icons-svg/coffee-plant-limb.svg"
+            alt="Icon"
+          />
+          <p class="main__section-four_product_feature_text">Bio Qualität</p>
+        </div>
+
+        <a class="button button__section-four--margin-vertical" href="#"
+          >zum Shop</a
+        >
+      </div>
+    </section>
 
     <!-- ||| footer ||| -->
     <footer></footer>
