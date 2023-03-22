@@ -198,6 +198,8 @@
 
   filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(23%)
     hue-rotate(325deg) brightness(104%) contrast(101%);
+
+  stroke-width: 4;
 }
 
 .shop-preview__product_info_icon-french-press--margin {
@@ -320,6 +322,7 @@
 }
 
 .main__section-five_iframe--height {
+  width: 100%;
   height: 50vh;
 }
 
@@ -330,9 +333,63 @@
 
   color: var(--font-color-white);
 
-  padding: 3.75 1.5rem;
+  padding: 3.75rem 1.5rem;
 }
 
 .footer__icon {
   width: 2.2rem;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.footer__company-name {
+}
+
+.footer__company-name_rustica {
+  font-size: 1.5rem;
+}
+
+.footer__company-name_description {
+  font-size: 1.125rem;
+}
+
+.footer__company-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__company-details_adress {
+  width: 50%;
+}
+
+.footer__company-details_adress_p {
+  width: 20ch;
+}
+
+.footer__company-details_office-hours {
+  width: 50%;
+}
+
+.footer__company-details_office-hours_p {
+  width: 14ch;
+}
+
+.footer__company-details_legal-info {
+  width: 50%;
+}
+
+.footer__company-details_legal-info_p {
+  width: 10ch;
+}
+
+.footer__company-details_suppages {
+  width: 50%;
+}
+
+.footer__company-details_suppages_p {
+  width: 5ch;
+}
+
+.footer__company-details--margin-vertical {
+  margin: 1.5rem 0;
 }
