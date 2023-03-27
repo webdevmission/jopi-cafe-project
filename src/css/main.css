@@ -28,6 +28,12 @@
   position: relative;
 }
 
+/* todo: create horizontal padding of 6.25rem for nav */
+@media screen and (min-width: 576px) {
+  .header {
+  }
+}
+
 /* | navigation | */
 /* nav position at top of page, consider to change to fixed/sticky  */
 .nav {
@@ -54,6 +60,21 @@
 .nav__img_menu--size {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.nav__desktop-a {
+  color: rgb(255, 255, 255);
+  margin: 0 2rem;
+}
+
+.nav__desktop-a:hover {
+  text-decoration: underline;
+}
+
+.shopping-basket {
+  filter: brightness(0) saturate(100%);
+  filter: invert(100%) sepia(2%) saturate(321%) hue-rotate(33deg)
+    brightness(112%) contrast(100%);
 }
 
 /* | h1-info | */
