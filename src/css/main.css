@@ -152,7 +152,7 @@
   width: 100%;
 }
 
-.article--margin-vertical {
+.article__elements--margin-vertical {
   margin: 1.25rem 0;
 }
 
@@ -171,18 +171,65 @@
 
 .article__img {
   width: 75%;
-  height: auto;
 }
 
-.article__img--margin {
+.article__img--margin-vertical {
   display: block;
   margin: 3.75rem 0;
 }
 
-.article__img--horizontal-margin {
+.article__img--margin-horizontal {
   margin-left: 25%;
 }
 
+/* flex order to switch position of text and images */
+@media (min-width: 768px) {
+  .main__section-one {
+    padding: 0 6.25rem;
+  }
+
+  .article--margin-vertical {
+    margin: 3.75rem 0;
+  }
+
+  .article__text_opening-time_img--flex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .article__text_img--flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .article__text_opening-time--width {
+    width: 40%;
+  }
+  .article__text--width {
+    width: 40%;
+  }
+  .article__img {
+    width: 49%;
+  }
+  .article__img--margin-vertical {
+    margin: 0;
+  }
+
+  .article__img-roesterei-cafe--flex {
+    align-self: center;
+  }
+
+  .article__text--flex {
+    order: 2;
+  }
+  .article__img-bio-und-fair--flex {
+    order: 1;
+  }
+
+  .article__h2--margin-vertical {
+    margin: 0;
+  }
+}
 /* || section-two || */
 
 .main__section-two {
