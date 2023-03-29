@@ -53,18 +53,18 @@
   }
 }
 
-.nav__img_logo--size {
+.nav__img-logo--design {
   width: 2.25rem;
   height: 2.25rem;
 }
 
-.nav__img_menu--size {
+.nav__img-burger-menu--design {
   width: 1.5rem;
   height: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .nav__img_menu--size {
+  .nav__img-burger-menu--design {
     display: none;
   }
 }
@@ -80,12 +80,12 @@
   }
 }
 
-.nav__selection_desktop-a {
+.nav__desktop-a {
   color: rgb(255, 255, 255);
   padding: 0 2rem;
 }
 
-.nav__selection_desktop-a:hover {
+.nav__desktop-a:hover {
   text-decoration: underline;
 }
 

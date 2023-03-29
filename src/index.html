@@ -16,6 +16,15 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Startseite</title>
   </head>
+
+  <!-- 
+    BEM Zettinx
+      modifier:
+        "position": margin, padding, flex, position, display, transform/translate, width/height
+        "design":   background-color, color, font-size, font-family, border width/height
+      without modifier::
+        "":         include more than one modifier type
+   -->
   <!-- |||| homepage |||| -->
   <body>
     <!-- {{> header }} -->
@@ -25,19 +34,21 @@
     <!-- todo:adding a toggle menu for navigation -->
     <nav class="nav">
       <img
-        class="nav__img_logo--size"
+        class="nav__img-logo--design"
         src="images/icons-svg/logo.svg"
         alt="Café Rustica Logo"
       />
       <img
-        class="nav__img_menu--size"
+        class="nav__img-burger-menu--design"
         src="images/icons-svg/burger-menu.svg"
         alt="Navigationsmenü"
       />
-      <div class="nav__selection--none">
-        <a class="nav__selection_desktop-a" href="#">das Café</a>
-        <a class="nav__selection_desktop-a" href="#">Herkunft</a>
-        <a class="nav__selection_desktop-a" href="#">Shop</a>
+      <div class="nav__option--position">
+        <a class="option_desktop-a" href="#">das Café</a>
+        <a class="option_desktop-a" href="#">Herkunft</a>
+        <a class="option_desktop-a" href="#"
+          ><span class="desktop-a_shop">shop</span></a
+        >
         <img
           class="shopping-basket"
           src="images/icons-svg/shopping-basket.svg"
