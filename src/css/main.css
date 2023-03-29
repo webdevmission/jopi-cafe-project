@@ -182,7 +182,7 @@
   margin-left: 25%;
 }
 
-/* flex order to switch position of text and images */
+/* swap image of roesterei-cafe to an cropped image */
 @media (min-width: 768px) {
   .main__section-one {
     padding: 0 6.25rem;
@@ -203,10 +203,12 @@
     align-items: center;
   }
   .article__text_opening-time--width {
-    width: 40%;
+    width: 51%;
+    padding-right: 3.75rem;
   }
   .article__text--width {
-    width: 40%;
+    width: 51%;
+    padding-left: 3.75rem;
   }
   .article__img {
     width: 49%;
@@ -219,10 +221,15 @@
     align-self: center;
   }
 
-  .article__text--flex {
-    order: 2;
+  .article__text_opening-time--position {
+    padding-right: 3.75;
   }
-  .article__img-bio-und-fair--flex {
+
+  .article__text--position {
+    order: 2;
+    padding-left: 3.75rem;
+  }
+  .article__img-bio-und-fair--position {
     order: 1;
   }
 
@@ -324,7 +331,7 @@
 
 .main__section-three {
   /* todo: setting min-height for small devices e.g. smartphones */
-  height: 70vh;
+  height: 50vh;
 
   background-image: url("../images/img/section-three-background.jpg");
   background-size: cover;
@@ -338,6 +345,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main__section-three {
+    height: 70vh;
+  }
 }
 
 .main__section-three_text {
@@ -356,20 +369,33 @@
   text-decoration: underline;
 }
 
+/* ||##############|| */
 /* || section-four || */
-
-/* todo: consider padding for whole section? */
+/* ||##############|| */
+/* todo: main__section-four_product_info install a max-height so that the icons do not spread */
 .main__section-four {
   /* padding: 0 1.5rem; */
   margin: 3.75rem 0;
 }
 
+@media (min-width: 768px) {
+  .main__section-four {
+    padding: 0 6.25rem;
+  }
+}
 .main__section-four--margin-vertical {
   margin: 2.5rem 0;
 }
 
 .main__section-four_h2 {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main__section-four_product--position {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .main__section-four_product_img {
@@ -384,9 +410,9 @@
 
 @media (min-width: 768px) {
   .main__section-four_product_img {
-    width: 30%;
+    width: 50%;
 
-    display: inline-block;
+    align-self: center;
     position: static;
     left: 0;
     transform: none;
@@ -402,8 +428,10 @@
 @media (min-width: 768px) {
   .main__section-four_product_info {
     width: 50%;
-
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -413,6 +441,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 768px) {
+  .main__section-four_product_feature {
+    width: auto;
+
+    flex-direction: row;
+  }
 }
 
 .main__section-four_product_feature_icon {
@@ -431,6 +467,12 @@
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .main__section-four_product_feature_text {
+    text-align: left;
+  }
+}
+
 .button__section-four--margin-vertical {
   margin-top: 2.5rem;
 }
@@ -439,9 +481,14 @@
 .main__section-five--margin-top {
   margin-top: 2.5rem;
 }
-
-.main__section-five_h2--margin-vertical {
+.main__section-five_h2--position {
   margin: 2.5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .main__section-five_h2--position {
+    margin: 2.5rem 6.25rem;
+  }
 }
 
 .main__section-five_iframe--height {
@@ -463,9 +510,6 @@
   width: 2.2rem;
   display: block;
   margin-bottom: 1.25rem;
-}
-
-.footer__company-name {
 }
 
 .footer__company-name_rustica {
@@ -515,4 +559,62 @@
 
 .footer__company-details--margin-vertical {
   margin: 1.5rem 0;
+}
+
+/* todo: adjust media queries for tablet-size */
+@media (min-width: 768px) {
+  .footer {
+    padding: 7.5rem 18.75rem 7.5rem 6.25rem;
+  }
+
+  .footer__icon {
+    width: 4.375rem;
+  }
+
+  .footer__info {
+    display: flex;
+  }
+
+  /* Rustica */
+  .footer__company-name {
+    width: 30%;
+  }
+
+  /* text */
+  .footer__company-details {
+    width: 70%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__company-details_adress {
+    width: auto;
+
+    order: 1;
+  }
+
+  .footer__company-details_office-hours {
+    width: 100%;
+
+    padding-top: 1.5rem;
+
+    order: 4;
+  }
+
+  .footer__company-details_legal-info {
+    width: auto;
+
+    order: 3;
+  }
+
+  .footer__company-details_suppages {
+    width: auto;
+
+    order: 2;
+  }
+
+  .footer__company-details--margin-vertical {
+    margin: 0;
+  }
 }
