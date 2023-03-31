@@ -19,6 +19,8 @@
 
   <!-- 
     BEM Zettinx
+      class= class names including a suffix with the name -container e.g. "(header__info)-container" a only build for having a container not refering to the element characteristics
+
       modifier:
         "position": margin, padding, flex, position, display, transform/translate, width/height
         "design":   background-color, color, font-size, font-family, border width/height
@@ -84,7 +86,7 @@
         <!-- | article | -->
         <article class="article--margin-vertical article-company">
           <div class="article-company__text">
-            <h2 class="article__elements article__h2--margin-vertical">
+            <h2 class="article__elements article-company__h2">
               Rösterei & Café
             </h2>
 
@@ -94,7 +96,7 @@
             </p>
 
             <div class="article-company__details article__elements">
-              <div class="article__address">
+              <div class="article-company__address">
                 Komm uns besuchen! Frauenhoferstr. 13, Kiel
               </div>
               <div class="article-company__opening-time">
@@ -136,7 +138,7 @@
           </div>
 
           <img
-            class="article__img article__img--margin-vertical article__img-bio-und-fair--position"
+            class="article__img article-info__img"
             src="images/img/bio-und-fair.jpg"
             alt="Kaffeepflanze"
           />
@@ -146,42 +148,36 @@
       <!-- ||#############|| -->
       <!-- || section-two || -->
       <!-- ||#############|| -->
-      <section class="main__section-two">
+      <section class="homepage-s-two">
         <!-- | h2 | -->
         <!-- todo: correct following issue: h2 produce an unintended margin-right for entire section-two-->
 
-        <h2 class="main__section-two_h2--width">
-          Entdecke unsere Kaffee Sorten
-        </h2>
+        <h2 class="homepage-s-two__h2">Entdecke unsere Kaffee Sorten</h2>
 
         <!-- | shop-preview | -->
-        <div class="shop-preview shop-preview--margin-vertical">
+        <div class="shop-preview">
           <!-- todo: finish prototype and replicate three times -->
           <div class="shop-preview__product">
             <img
-              class="shop-preview__product_img"
+              class="shop-preview__img"
               src="images/img/shop-product.png"
               alt="Shop Produkt"
             />
             <div>
-              <p class="shop-preview__product_info_origin--font-size">
-                Costa Rica
-              </p>
-              <p class="shop-preview__product_info_price--color">
-                6,90€ – 26,90€
-              </p>
+              <p class="shop-preview__product-name">Costa Rica</p>
+              <p class="shop-preview__product-price">6,90€ – 26,90€</p>
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-beans.svg"
                 alt="Kaffeebohnen"
               />
               <img
-                class="shop-preview__product_info_icon shop-preview__product_info_icon-french-press--margin"
+                class="shop-preview__icon shop-preview__icon--position"
                 src="images/icons-svg/french-press.svg"
                 alt="Frenchpress"
               />
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-scoop.svg"
                 alt="Kaffeeschaufel"
               />
@@ -189,29 +185,25 @@
           </div>
           <div class="shop-preview__product">
             <img
-              class="shop-preview__product_img"
+              class="shop-preview__img"
               src="images/img/shop-product.png"
               alt="Shop Produkt"
             />
-            <div class="shop-preview__product_info">
-              <p class="shop-preview__product_info_origin--font-size">
-                Costa Rica
-              </p>
-              <p class="shop-preview__product_info_price--color">
-                6,90€ – 26,90€
-              </p>
+            <div>
+              <p class="shop-preview__product-name">Costa Rica</p>
+              <p class="shop-preview__product-price">6,90€ – 26,90€</p>
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-beans.svg"
                 alt="Kaffeebohnen"
               />
               <img
-                class="shop-preview__product_info_icon shop-preview__product_info_icon-french-press--margin"
+                class="shop-preview__icon shop-preview__icon--position"
                 src="images/icons-svg/french-press.svg"
                 alt="Frenchpress"
               />
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-scoop.svg"
                 alt="Kaffeeschaufel"
               />
@@ -219,29 +211,25 @@
           </div>
           <div class="shop-preview__product">
             <img
-              class="shop-preview__product_img"
+              class="shop-preview__img"
               src="images/img/shop-product.png"
               alt="Shop Produkt"
             />
-            <div class="shop-preview__product_info">
-              <p class="shop-preview__product_info_origin--font-size">
-                Costa Rica
-              </p>
-              <p class="shop-preview__product_info_price--color">
-                6,90€ – 26,90€
-              </p>
+            <div>
+              <p class="shop-preview__product-name">Costa Rica</p>
+              <p class="shop-preview__product-price">6,90€ – 26,90€</p>
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-beans.svg"
                 alt="Kaffeebohnen"
               />
               <img
-                class="shop-preview__product_info_icon shop-preview__product_info_icon-french-press--margin"
+                class="shop-preview__icon shop-preview__icon--position"
                 src="images/icons-svg/french-press.svg"
                 alt="Frenchpress"
               />
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-scoop.svg"
                 alt="Kaffeeschaufel"
               />
@@ -249,29 +237,25 @@
           </div>
           <div class="shop-preview__product">
             <img
-              class="shop-preview__product_img"
+              class="shop-preview__img"
               src="images/img/shop-product.png"
               alt="Shop Produkt"
             />
-            <div class="shop-preview__product_info">
-              <p class="shop-preview__product_info_origin--font-size">
-                Costa Rica
-              </p>
-              <p class="shop-preview__product_info_price--color">
-                6,90€ – 26,90€
-              </p>
+            <div>
+              <p class="shop-preview__product-name">Costa Rica</p>
+              <p class="shop-preview__product-price">6,90€ – 26,90€</p>
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-beans.svg"
                 alt="Kaffeebohnen"
               />
               <img
-                class="shop-preview__product_info_icon shop-preview__product_info_icon-french-press--margin"
+                class="shop-preview__icon shop-preview__icon--position"
                 src="images/icons-svg/french-press.svg"
                 alt="Frenchpress"
               />
               <img
-                class="shop-preview__product_info_icon"
+                class="shop-preview__icon"
                 src="images/icons-svg/coffee-scoop.svg"
                 alt="Kaffeeschaufel"
               />
@@ -279,80 +263,66 @@
           </div>
         </div>
 
-        <!-- | section-two__button | -->
-        <a
-          class="button button_section-two--border button_section-two--position"
-        >
-          alle Produkte
-        </a>
+        <!-- | button of section-two | -->
+        <a class="button button_s-two">alle Produkte</a>
       </section>
     </main>
 
     <!-- ||###############|| -->
     <!-- || section-three || -->
     <!-- ||###############|| -->
-    <section class="main__section-three">
+    <section class="homepage-s-three">
       <h3>Herkunft</h3>
-      <pre
-        class="main__section-three_text main__section-three_text--margin-vertical"
-      >
+      <pre class="homepage-s-three__pre">
   Weit hinten, hinter den Wortbergen,
        fern der Länder Vokalien und
    Konsonantien leben die Blindtexte.
   Und das alles in bester Bio Qualität</pre
       >
-      <a href="#" class="main__section-three_origin-info">mehr</a>
+      <a href="#" class="homepage-s-three__a">mehr</a>
     </section>
 
     <!-- ||##############|| -->
     <!-- || section-four || -->
     <!-- ||##############|| -->
-    <section class="main__section-four">
-      <h2 class="main__section-four_h2 main__section-four--margin-vertical">
+    <section class="homepage-s-four">
+      <h2 class="homepage-s-four__h2 homepage-s-four__elements">
         Das steckt drin
       </h2>
 
-      <div class="main__section-four_product--position">
+      <div class="homepage-s-four__product">
         <img
-          class="main__section-four_product_img main__section-four--margin-vertical"
+          class="homepage-s-four__img homepage-s-four__elements"
           src="images/img/shop-product.png"
           alt="Shop Produkt"
         />
 
-        <div
-          class="main__section-four_product_info main__section-four--margin-vertical"
-        >
-          <div class="main__section-four_product_feature">
+        <div class="homepage-s-four__product-info homepage-s-four__elements">
+          <div class="homepage-s-four__feature">
             <img
-              class="main__section-four_product_feature_icon main__section-four_product_feature_icon--margin-vertical"
+              class="homepage-s-four__icon"
               src="images/icons-svg/coffee-cup.svg"
               alt="Icon"
             />
-            <p class="main__section-four_product_feature_text">
-              Bester Geschmack
-            </p>
+            <p class="homepage-s-four__feature-text">Bester Geschmack</p>
           </div>
-          <div class="main__section-four_product_feature">
+          <div class="homepage-s-four__feature">
             <img
-              class="main__section-four_product_feature_icon main__section-four_product_feature_icon--margin-vertical"
+              class="homepage-s-four__icon"
               src="images/icons-svg/coffee-scoop.svg"
               alt="Icon"
             />
-            <p class="main__section-four_product_feature_text">
-              Fair gehandelt
-            </p>
+            <p class="homepage-s-four__feature-text">Fair gehandelt</p>
           </div>
-          <div class="main__section-four_product_feature">
+          <div class="homepage-s-four__feature">
             <img
-              class="main__section-four_product_feature_icon main__section-four_product_feature_icon--margin-vertical"
+              class="homepage-s-four__icon"
               src="images/icons-svg/coffee-plant-limb.svg"
               alt="Icon"
             />
-            <p class="main__section-four_product_feature_text">Bio Qualität</p>
+            <p class="homepage-s-four__feature-text">Bio Qualität</p>
           </div>
-          <a class="button button__section-four--margin-vertical" href="#"
-            >zum Shop</a
-          >
+          <a class="button button--homepage-s-four" href="#">zum Shop</a>
         </div>
       </div>
     </section>
@@ -360,10 +330,10 @@
     <!-- ||##############|| -->
     <!-- || section-five || -->
     <!-- ||##############|| -->
-    <section class="main__section-five--margin-top">
-      <h2 class="main__section-five_h2--position">Komm vorbei</h2>
+    <section class="homepage-s-five">
+      <h2 class="homepage-s-five__h2">Komm vorbei</h2>
       <iframe
-        class="main__section-five_iframe--height"
+        class="homepage-s-five__iframe"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4651.7007536039155!2d10.11816911716613!3d54.34195265771383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1679408730001!5m2!1sde!2sde"
         width="600"
         height="450"
@@ -379,41 +349,35 @@
     <footer class="footer">
       <img class="footer__icon" src="images/icons-svg/logo.svg" alt="Logo" />
 
+      <!-- todo: swap some <p> with <a> -->
       <div class="footer__info">
-        <div class="footer__company-name">
-          <p class="footer__company-name_rustica">Rustica</p>
-          <p class="footer__company-name_description">Café & Rösterei</p>
+        <div class="footer__company">
+          <p class="footer__brand-name">Rustica</p>
+          <p class="footer__sector">Café & Rösterei</p>
         </div>
 
-        <div class="footer__company-details">
-          <div
-            class="footer__company-details_adress footer__company-details--margin-vertical"
-          >
-            <p class="footer__company-details_adress_p">
+        <div class="footer__details">
+          <div class="footer__address-container footer__elements">
+            <p class="footer__address-text">
               Komm uns besuchen! Frauenhoferstr. 13, Kiel
             </p>
           </div>
 
-          <div
-            class="footer__company-details_office-hours footer__company-details--margin-vertical"
-          >
-            <p class="footer__company-details_office-hours_p">
+          <div class="footer__office-hours-container footer__elements">
+            <p class="footer__office-hours-text">
               Mo – Fr 8–18 Uhr Sa 11–18 Uhr
             </p>
           </div>
 
-          <div
-            class="footer__company-details_legal-info footer__company-details--margin-vertical"
-          >
-            <p class="footer__company-details_legal-info_p">
-              Impressum Datenschutz
-            </p>
+          <div class="footer__legal-notice-container footer__elements">
+            <a class="footer__a" href="#">Impressum</a>
+            <a class="footer__a" href="#">Datenschutz</a>
           </div>
 
-          <div
-            class="footer__company-details_suppages footer__company-details--margin-vertical"
-          >
-            <p class="footer__company-details_suppages_p">Café Shop Herkunft</p>
+          <div class="footer__subpages footer__elements">
+            <a class="footer__a" href="#">Café</a>
+            <a class="footer__a" href="#">Shop</a>
+            <a class="footer__a" href="#">Herkunft</a>
           </div>
         </div>
       </div>
