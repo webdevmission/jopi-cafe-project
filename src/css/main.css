@@ -150,57 +150,60 @@
   margin: 1.25rem 0;
 }
 
-.article__opening-time {
+.article-company__details {
   display: flex;
   gap: 2rem;
   width: 19ch;
 }
 
-.article__opening-time_office-hours--width {
+.article-company__opening-time {
   width: 13ch;
 }
 
 .article__img {
   width: 75%;
-}
-
-.article__img--margin-vertical {
   display: block;
   margin: 3.75rem 0;
 }
 
-.article__img--margin-horizontal {
+/* only affects the first image */
+.article-company__img {
   margin-left: 25%;
 }
 
-/* swap image of roesterei-cafe to an cropped image */
+/* todo: swap image of roesterei-cafe to a cropped image */
 @media (min-width: 768px) {
-  .main__section-one {
+  .homepage__s-one {
     padding: 0 6.25rem;
   }
 
-  .article--margin-vertical {
+  .article__elements {
     margin: 3.75rem 0;
   }
 
-  .article__text_opening-time_img--flex {
+  .article-company {
     display: flex;
     justify-content: space-between;
   }
 
-  .article__text_img--flex {
+  .article-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .article__text_opening-time--width {
+  .article-company__text {
     width: 51%;
     padding-right: 3.75rem;
   }
-  .article__text--width {
+  .article-info__text {
     width: 51%;
     padding-left: 3.75rem;
+    order: 2;
   }
+
+  /* bookmark: 31.03.2023, 08:48 am */
+
+  /* position for both images */
   .article__img {
     width: 49%;
   }
@@ -212,14 +215,6 @@
     align-self: center;
   }
 
-  .article__text_opening-time--position {
-    padding-right: 3.75;
-  }
-
-  .article__text--position {
-    order: 2;
-    padding-left: 3.75rem;
-  }
   .article__img-bio-und-fair--position {
     order: 1;
   }
