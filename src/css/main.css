@@ -3,34 +3,12 @@
 @import "components/hero.css";
 
 /* todo: integrate headlines like in html document */
-
+/* todo: before production, check and correct codeline number of global css classes */
 /* |||| homepage |||| */
-
-/* ||| header ||| */
-.header {
-  /* do we need width: auto or 100%? */
-  height: 75vh;
-  width: 100%;
-
-  color: var(--font-color-white);
-
-  background-image: url("../images/img/header-background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-color: rgba(0, 0, 0, 0.3);
-
-  display: flex;
-  /* or rather row when <nav> and <a> are absolute */
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
 
 /* todo: create horizontal padding of 6.25rem for nav */
 
-/* | navigation | */
+/* || navigation || */
 /* nav position at top of page, consider to change to fixed/sticky  */
 .nav {
   width: 100%;
@@ -94,13 +72,36 @@
   filter: invert(100%) sepia(2%) saturate(321%) hue-rotate(33deg)
     brightness(112%) contrast(100%);
 }
+/* ||| homepage-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| homepage-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.homepage-header {
+  /* do we need width: auto or 100%? */
+  height: 75vh;
+  width: 100%;
+
+  color: var(--font-color-white);
+
+  background-image: url("../images/img/homepage-header-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  /* or rather row when <nav> and <a> are absolute */
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
 
 /* | h1-info | */
-.header__headline {
+.homepage-header__headline {
   text-align: center;
 }
 
-.header__h1 {
+.homepage-header__h1 {
   margin: 0;
 }
 
@@ -133,11 +134,12 @@
   bottom: 15%;
 }
 
-/* ||| main ||| */
+/* ||| homepage-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| homepage-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* || section-one || */
 
-.homepage-s-one {
+.section {
   width: 100%;
 
   margin: 3.75rem 0;
@@ -176,10 +178,12 @@
 
 /* todo: swap image of roesterei-cafe to a cropped image */
 @media (min-width: 768px) {
-  .homepage__s-one {
+  .section {
     padding: 0 6.25rem;
   }
-
+  .article {
+    margin: 7.5rem 0;
+  }
   .article__elements {
     margin: 3.75rem 0;
   }
@@ -302,7 +306,7 @@
   margin: 0.25rem 0.25rem 0;
 }
 
-.button_s-two {
+.button--homepage-s-two {
   position: relative;
   left: 50%;
   transform: translate(-50%);
@@ -354,7 +358,6 @@
 /* ||##############|| */
 /* todo: main__section-four_product_info install a max-height so that the icons do not spread */
 .homepage-s-four {
-  /* padding: 0 1.5rem; */
   margin: 3.75rem 0;
 }
 
@@ -415,7 +418,6 @@
   }
 }
 
-/* sss */
 .homepage-s-four__feature {
   width: calc(100% / 3);
 
@@ -454,28 +456,30 @@
 .button--homepage-s-four {
   margin-top: 2.5rem;
 }
+/* ||#####|| */
+/* || map || */
+/* ||#####|| */
 
-/* || section-five || */
-.homepage-s-five {
+.map {
   margin-top: 2.5rem;
 }
-.homepage-s-five__h2 {
+.map__h2 {
   margin: 2.5rem 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .homepage-s-five__h2 {
+  .map__h2 {
     margin: 2.5rem 6.25rem;
   }
 }
 
-.homepage-s-five__iframe {
+.map__iframe {
   width: 100%;
   height: 50vh;
 }
 
-/* ||| footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/* ||| footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| homepage-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| homepage-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 .footer {
   background-color: rgb(0, 0, 0);
 
@@ -614,3 +618,45 @@
     margin: 0;
   }
 }
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ||| the-cafe-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.subpage-header {
+  height: 50vh;
+  background-image: url(../images/img/rustica-interior.jpg);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+/* ||#####################|| */
+/* || the-cafe-navigation || */
+/* ||#####################|| */
+
+/* using the css classes of codeline ~(13-26)  */
+
+/* ||| the-cafe-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ||################|| */
+/* || the-cafe-s-one || */
+/* ||################|| */
+
+/* ||################|| */
+/* || the-cafe-s-two || */
+/* ||################|| */
+
+/* ||##############|| */
+/* || the-cafe-map || */
+/* ||##############|| */
+
+/* ||| the-cafe-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| the-cafe-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */

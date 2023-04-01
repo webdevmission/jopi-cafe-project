@@ -29,10 +29,8 @@
    -->
   <!-- |||| homepage |||| -->
   <body>
-    <!-- {{> header }} -->
-    <!-- <script src="/js/index.js" type="module"></script> -->
-
-    <!-- | navigation | -->
+    <!-- ||| navigation ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||| navigation ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- todo:adding a toggle menu for navigation -->
     <nav class="nav">
       <img
@@ -46,7 +44,7 @@
         alt="Navigationsmenü"
       />
       <div class="nav__option">
-        <a class="nav__a--desktop" href="#">das Café</a>
+        <a class="nav__a--desktop" href="das-cafe/index.html">das Café</a>
         <a class="nav__a--desktop" href="#">Herkunft</a>
         <a class="nav__a--desktop" href="#">shop</a>
         <img
@@ -62,12 +60,15 @@
       </ul> -->
     </nav>
 
-    <!-- ||| header ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-    <!-- ||| header ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
-    <header class="header">
+    <!-- {{> header }} -->
+    <!-- <script src="/js/index.js" type="module"></script> -->
+
+    <!-- |||homepage header ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- |||homepage header ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <header class="homepage-header">
       <!-- | h1-info | -->
-      <div class="header__headline">
-        <h1 class="header__h1">Rustica</h1>
+      <div class="homepage-header__headline">
+        <h1 class="homepage-header__h1">Rustica</h1>
         <p>Bio und Fair seit 1991</p>
       </div>
 
@@ -78,13 +79,16 @@
 
     <!-- ||| main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- ||| main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
     <main>
       <!-- ||#############|| -->
       <!-- || section-one || -->
       <!-- ||#############|| -->
-      <section class="homepage-s-one">
+
+      <section class="section">
         <!-- | article | -->
-        <article class="article--margin-vertical article-company">
+
+        <article class="article article-company">
           <div class="article-company__text">
             <h2 class="article__elements article-company__h2">
               Rösterei & Café
@@ -105,25 +109,17 @@
             </div>
           </div>
 
-          <!-- <div>
-            <img src="images/roesterei-cafe.jpg" alt="Gästebereich" />
-          </div> -->
-
           <img
-            class="article__img article-company__img article__img-roesterei-cafe--flex"
-            src="images/img/roesterei-cafe.jpg"
+            class="article__img article-company__img"
+            src="images/img/rustica-interior.jpg"
             alt="Kaffeepflanze"
           />
         </article>
 
         <!-- | article | -->
-        <article class="article---margin-vertical article-info">
+        <article class="article article-info">
           <div class="article-info__text">
-            <h2
-              class="article__elements article__h2--margin-vertical article__h2--flex"
-            >
-              Bio und Fair
-            </h2>
+            <h2 class="article__elements">Bio und Fair</h2>
 
             <p class="article__elements">
               Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und
@@ -131,15 +127,11 @@
               Wortbergen, fern der Länder Vokalien und Konsonantien leben die
               Blindtexte. Und das alles in bester Bio Qualität
             </p>
-
-            <!-- <div class="article__img_position--margin">
-            <img src="images/bio-und-fair.jpg" alt="Kaffeepflanze" />
-          </div> -->
           </div>
 
           <img
             class="article__img article-info__img"
-            src="images/img/bio-und-fair.jpg"
+            src="images/img/homepage-article-info.jpg"
             alt="Kaffeepflanze"
           />
         </article>
@@ -264,86 +256,85 @@
         </div>
 
         <!-- | button of section-two | -->
-        <a class="button button_s-two">alle Produkte</a>
+        <a class="button button--homepage-s-two">alle Produkte</a>
       </section>
-    </main>
 
-    <!-- ||###############|| -->
-    <!-- || section-three || -->
-    <!-- ||###############|| -->
-    <section class="homepage-s-three">
-      <h3>Herkunft</h3>
-      <pre class="homepage-s-three__pre">
+      <!-- ||###############|| -->
+      <!-- || section-three || -->
+      <!-- ||###############|| -->
+      <section class="homepage-s-three">
+        <h3>Herkunft</h3>
+        <pre class="homepage-s-three__pre">
   Weit hinten, hinter den Wortbergen,
        fern der Länder Vokalien und
    Konsonantien leben die Blindtexte.
   Und das alles in bester Bio Qualität</pre
-      >
-      <a href="#" class="homepage-s-three__a">mehr</a>
-    </section>
+        >
+        <a href="#" class="homepage-s-three__a">mehr</a>
+      </section>
 
-    <!-- ||##############|| -->
-    <!-- || section-four || -->
-    <!-- ||##############|| -->
-    <section class="homepage-s-four">
-      <h2 class="homepage-s-four__h2 homepage-s-four__elements">
-        Das steckt drin
-      </h2>
+      <!-- ||##############|| -->
+      <!-- || section-four || -->
+      <!-- ||##############|| -->
+      <section class="homepage-s-four">
+        <h2 class="homepage-s-four__h2 homepage-s-four__elements">
+          Das steckt drin
+        </h2>
 
-      <div class="homepage-s-four__product">
-        <img
-          class="homepage-s-four__img homepage-s-four__elements"
-          src="images/img/shop-product.png"
-          alt="Shop Produkt"
-        />
+        <div class="homepage-s-four__product">
+          <img
+            class="homepage-s-four__img homepage-s-four__elements"
+            src="images/img/shop-product.png"
+            alt="Shop Produkt"
+          />
 
-        <div class="homepage-s-four__product-info homepage-s-four__elements">
-          <div class="homepage-s-four__feature">
-            <img
-              class="homepage-s-four__icon"
-              src="images/icons-svg/coffee-cup.svg"
-              alt="Icon"
-            />
-            <p class="homepage-s-four__feature-text">Bester Geschmack</p>
+          <div class="homepage-s-four__product-info homepage-s-four__elements">
+            <div class="homepage-s-four__feature">
+              <img
+                class="homepage-s-four__icon"
+                src="images/icons-svg/coffee-cup.svg"
+                alt="Icon"
+              />
+              <p class="homepage-s-four__feature-text">Bester Geschmack</p>
+            </div>
+            <div class="homepage-s-four__feature">
+              <img
+                class="homepage-s-four__icon"
+                src="images/icons-svg/coffee-scoop.svg"
+                alt="Icon"
+              />
+              <p class="homepage-s-four__feature-text">Fair gehandelt</p>
+            </div>
+            <div class="homepage-s-four__feature">
+              <img
+                class="homepage-s-four__icon"
+                src="images/icons-svg/coffee-plant-limb.svg"
+                alt="Icon"
+              />
+              <p class="homepage-s-four__feature-text">Bio Qualität</p>
+            </div>
+            <a class="button button--homepage-s-four" href="#">zum Shop</a>
           </div>
-          <div class="homepage-s-four__feature">
-            <img
-              class="homepage-s-four__icon"
-              src="images/icons-svg/coffee-scoop.svg"
-              alt="Icon"
-            />
-            <p class="homepage-s-four__feature-text">Fair gehandelt</p>
-          </div>
-          <div class="homepage-s-four__feature">
-            <img
-              class="homepage-s-four__icon"
-              src="images/icons-svg/coffee-plant-limb.svg"
-              alt="Icon"
-            />
-            <p class="homepage-s-four__feature-text">Bio Qualität</p>
-          </div>
-          <a class="button button--homepage-s-four" href="#">zum Shop</a>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ||##############|| -->
-    <!-- || section-five || -->
-    <!-- ||##############|| -->
-    <section class="homepage-s-five">
-      <h2 class="homepage-s-five__h2">Komm vorbei</h2>
-      <iframe
-        class="homepage-s-five__iframe"
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4651.7007536039155!2d10.11816911716613!3d54.34195265771383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1679408730001!5m2!1sde!2sde"
-        width="600"
-        height="450"
-        style="border: 0"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-    </section>
-
+      <!-- ||#####|| -->
+      <!-- || map || -->
+      <!-- ||#####|| -->
+      <section class="map">
+        <h2 class="map__h2">Komm vorbei</h2>
+        <iframe
+          class="map__iframe"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4651.7007536039155!2d10.11816911716613!3d54.34195265771383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b2560c505797eb%3A0xf549da0f074162a9!2sFraunhoferstra%C3%9Fe%2013%2C%2024118%20Kiel!5e0!3m2!1sde!2sde!4v1679408730001!5m2!1sde!2sde"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
     <!-- ||| footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <!-- ||| footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
     <footer class="footer">
