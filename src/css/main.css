@@ -82,7 +82,7 @@
 
   color: var(--font-color-white);
 
-  background-image: url("../images/img/homepage-header-background.jpg");
+  background-image: url("../images/img/three-cups-of-coffee.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -319,7 +319,7 @@
   /* todo: setting min-height for small devices e.g. smartphones */
   height: 50vh;
 
-  background-image: url("../images/img/section-three-background.jpg");
+  background-image: url("../images/img/filled-coffee-bean-bags.jpg");
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
@@ -650,13 +650,39 @@
 /* || the-cafe-s-one || */
 /* ||################|| */
 
+/* using the css classes of codeline ~(151-#)  */
+
 /* ||################|| */
 /* || the-cafe-s-two || */
 /* ||################|| */
+
+/* using the css classes of codeline ~(142-#)  */
+
+.the-cafe-s-two__gallery {
+  height: 200vh;
+  /* height: calc(3rem + 2 * (50vw - 2rem) * 0.66 + 2 * 1.33 * (50vw - 2rem)); */
+
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+}
+
+.the-cafe-s-two__pictures {
+  width: calc((100vw - 4rem) / 2);
+  height: calc((50vw - 2rem) * (2 / 3));
+}
+
+.the-cafe-s-two__pictures--size {
+  height: calc((50vw - 2rem) * (4 / 3));
+}
 
 /* ||##############|| */
 /* || the-cafe-map || */
 /* ||##############|| */
 
+/* using the css classes of codeline ~(463-#)  */
+
 /* ||| the-cafe-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* ||| the-cafe-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* using the css classes of codeline ~(483-#)  */
