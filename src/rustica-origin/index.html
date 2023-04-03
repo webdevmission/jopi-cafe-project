@@ -24,20 +24,22 @@
     <!-- ||| navigation ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
     <nav class="nav">
-      <img
-        class="logo"
-        src="../images/icons-svg/logo.svg"
-        alt="Café Rustica Logo"
-      />
+      <a href="../index.html"
+        ><img
+          class="logo"
+          src="../images/icons-svg/logo.svg"
+          alt="Café Rustica Logo"
+        />
+      </a>
       <img
         class="nav__burger-menu"
         src="../images/icons-svg/burger-menu.svg"
         alt="Navigationsmenü"
       />
       <div class="nav__option">
-        <a class="nav__a--desktop" href="das-cafe/index.html">das Café</a>
+        <a class="nav__a--desktop" href="../das-cafe/index.html">das Café</a>
         <a class="nav__a--desktop" href="index.html">Herkunft</a>
-        <a class="nav__a--desktop" href="#">shop</a>
+        <a class="nav__a--desktop" href="../#">shop</a>
         <img
           class="shopping-basket"
           src="../images/icons-svg/shopping-basket.svg"
@@ -86,6 +88,9 @@
           </div>
         </article>
 
+        <!-- todo: rework properties; 
+          width, height -> CSS
+          autoplay muted controls -> JS  -->
         <video width="100%" height="auto" autoplay muted controls>
           <source src="#" type="video/mp4" />
           <source src="../images/img/coffee-farmer.jpg" type="img" />
@@ -101,7 +106,7 @@
 
         <article class="article article-company">
           <div class="article-company__text">
-            <h2 class="article__elements article__elements article-company__h2">
+            <h2 class="article__elements article-company__h2">
               Die Anbaugebiete
             </h2>
 
@@ -118,21 +123,17 @@
             </p>
           </div>
           <img
-            class="article__img article-company__img"
+            class="article__img article-company__img article-company__img--position"
             src="../images/img/coffee-plant.jpg"
             alt="Kaffeepflanze"
           />
         </article>
-      </section>
 
-      <!-- ||########################|| -->
-      <!-- || rustica-origin-s-three || -->
-      <!-- ||########################|| -->
-
-      <section class="section">
-        <article class="article article-info">
-          <div class="article-info__text article-info__text--coffee-worker">
-            <h2 class="article__elements">Das Wohl der Kaffeebauern</h2>
+        <article class="article article-info article-info--position">
+          <div class="article-info__text">
+            <h2 class="article__elements article-info__h2">
+              Das Wohl der Kaffeebauern
+            </h2>
 
             <p class="article__elements">
               Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und

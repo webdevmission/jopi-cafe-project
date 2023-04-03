@@ -25,7 +25,7 @@
 
   padding: 0.75rem 1.5rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav {
     padding: 0.75rem 6.25rem;
   }
@@ -41,7 +41,7 @@
   height: 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav__burger-menu {
     display: none;
   }
@@ -52,7 +52,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nav__option {
     display: block;
   }
@@ -177,7 +177,7 @@
 }
 
 /* todo: swap image of roesterei-cafe to a cropped image */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .section {
     padding: 0 6.25rem;
   }
@@ -198,6 +198,7 @@
     justify-content: space-between;
     align-items: center;
   }
+
   .article-company__text {
     width: 51%;
     padding-right: 3.75rem;
@@ -240,7 +241,7 @@
   padding: 3.75rem 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-two {
     padding: 7.5rem 6.25rem;
   }
@@ -262,7 +263,7 @@
   margin: 2.5rem 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .shop-preview {
     margin: 5rem 0;
   }
@@ -272,7 +273,7 @@
   width: calc(50% - 0.5rem);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .shop-preview__product {
     width: calc(25% - 0.75rem);
   }
@@ -333,7 +334,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-three {
     height: 70vh;
   }
@@ -361,7 +362,7 @@
   margin: 3.75rem 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-four {
     padding: 0 6.25rem;
   }
@@ -374,7 +375,7 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-four__product {
     display: flex;
     justify-content: center;
@@ -391,7 +392,7 @@
   transform: translate(-50%);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-four__img {
     width: 50%;
 
@@ -408,7 +409,7 @@
   justify-content: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-four__product-info {
     width: 50%;
     display: flex;
@@ -426,7 +427,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-four__feature {
     width: auto;
 
@@ -447,7 +448,7 @@
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .homepage-s-four__feature-text {
     text-align: left;
   }
@@ -467,7 +468,7 @@
   margin: 2.5rem 1.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .map__h2 {
     margin: 2.5rem 6.25rem;
   }
@@ -731,13 +732,23 @@
 /* || rustica-origin-s-two || */
 /* ||######################|| */
 
-/* ||########################|| */
-/* || rustica-origin-s-three || */
-/* ||########################|| */
-
 /* using the css classes of codeline ~(142-#)  */
 
 @media (min-width: 1024px) {
-  .article-info__text--coffee-worker {
+  .article-company__text {
+    width: 45%;
+    padding-right: 3.75rem;
+  }
+  .article-company__img--position {
+    width: 55%;
+  }
+  .article-info {
+    align-items: flex-start;
+  }
+  .article-info--position {
+    padding: 0 7.5rem;
+  }
+  .article-info__h2 {
+    margin: 0;
   }
 }
