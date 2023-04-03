@@ -13,6 +13,7 @@ module.exports = defineConfig({
         homepage: resolve(__dirname, "src/index.html"),
         theCafe: resolve(__dirname, "src/das-cafe/index.html"),
         rusticaOrigin: resolve(__dirname, "src/rustica-origin/index.html"),
+        legalInfo: resolve(__dirname, "src/legal-info/index.html"),
       },
     },
   },
