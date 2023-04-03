@@ -2,6 +2,11 @@
 @import "base.css";
 @import "components/hero.css";
 
+/* ||##############||  */
+/* || global todos ||  */
+/* ||##############|| */
+/* todo: rework comment headlines of CSS */
+/* todo: classes like "article-info__h2--wohl-bauern" change modifier name */
 /* todo: integrate headlines like in html document */
 /* todo: before production, check and correct codeline number of global css classes */
 /* |||| homepage |||| */
@@ -148,13 +153,23 @@
 
 /* | article | */
 
+/* todo: adjust width of article-company for optimal details and opening-times rendering */
+
 .article__elements {
   margin: 1.25rem 0;
+}
+
+.article-company__h2--roesterei-cafe {
+  width: 14ch;
 }
 
 .article-company__details {
   display: flex;
   gap: 2rem;
+}
+
+.article-info__h2--bio-fair {
+  width: 10ch;
 }
 
 .article-company__address {
@@ -461,6 +476,7 @@
 /* || map || */
 /* ||#####|| */
 
+/* todo: add padding left right for map in desktop width */
 .map {
   margin-top: 2.5rem;
 }
@@ -660,16 +676,18 @@
 
 /* using the css classes of codeline ~(142-#)  */
 
+.article-info__h2--frisches-gebeack {
+  width: 15ch;
+}
+
 @media (min-width: 1024px) {
   .article-info__text--position {
-    justify-content: center;
-    padding: 0 15rem;
+    padding: 0 25%;
   }
 }
 
 .the-cafe-s-two__gallery {
-  height: 200vh;
-  /* height: calc(3rem + 2 * (50vw - 2rem) * 0.66 + 2 * 1.33 * (50vw - 2rem)); */
+  height: calc(3rem + 2 * (50vw - 2rem) * 0.66 + 2 * 1.33 * (50vw - 2rem));
 
   display: flex;
   flex-flow: column wrap;
@@ -678,11 +696,50 @@
 
 .the-cafe-s-two__pictures {
   width: calc((100vw - 4rem) / 2);
-  height: calc((50vw - 2rem) * (2 / 3));
+  height: calc((50vw - 2rem) * 0.66);
 }
 
 .the-cafe-s-two__pictures--size {
-  height: calc((50vw - 2rem) * (4 / 3));
+  height: calc((50vw - 2rem) * 1.33);
+}
+
+@media (min-width: 1024px) {
+  .the-cafe-s-two__gallery {
+    height: calc(1rem + (25vw - 4.5rem) * 0.66 + 1.33 * (25vw - 4.5rem));
+  }
+  .the-cafe-s-two__pictures {
+    width: calc((100vw - 18rem) / 4);
+    height: calc((25vw - 4.5rem) * 0.66);
+  }
+
+  .the-cafe-s-two__pictures--size {
+    height: calc((25vw - 4.5rem) * 1.33);
+  }
+
+  .the-cafe-s-two__pictures--order-one {
+    order: 1;
+  }
+  .the-cafe-s-two__pictures--order-two {
+    order: 2;
+  }
+  .the-cafe-s-two__pictures--order-three {
+    order: 3;
+  }
+  .the-cafe-s-two__pictures--order-four {
+    order: 4;
+  }
+  .the-cafe-s-two__pictures--order-five {
+    order: 5;
+  }
+  .the-cafe-s-two__pictures--order-six {
+    order: 6;
+  }
+  .the-cafe-s-two__pictures--order-seven {
+    order: 7;
+  }
+  .the-cafe-s-two__pictures--order-eight {
+    order: 8;
+  }
 }
 
 /* ||##############|| */
@@ -728,11 +785,35 @@
 /* using the css classes of codeline ~(142-#)  */
 /* using the css classes of codeline ~(662-#)  */
 
+@media (min-width: 1024px) {
+  .article-info__text--ursprung-rustica {
+    padding: 0 calc(25% - 10.5ch);
+  }
+}
+
+.article-info__h2--ursprung-rustica {
+  width: 11ch;
+}
+
+@media (min-width: 1024px) {
+  .article-info__h2--ursprung-rustica {
+    width: 21ch;
+  }
+}
+
 /* ||######################|| */
 /* || rustica-origin-s-two || */
 /* ||######################|| */
 
 /* using the css classes of codeline ~(142-#)  */
+
+.article-info__h2--anbaugebiete {
+  width: 15ch;
+}
+
+.article-info__h2--wohl-bauern {
+  width: 11ch;
+}
 
 @media (min-width: 1024px) {
   .article-company__text {
