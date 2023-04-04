@@ -14,7 +14,7 @@
 /* todo: create horizontal padding of 6.25rem for nav */
 
 /* || navigation || */
-/* nav position at top of page, consider to change to fixed/sticky  */
+/* nav position at top of page, consider to change to fixed/sticky, adjusting with JS  */
 .nav {
   width: 100%;
   box-sizing: border-box;
@@ -24,6 +24,8 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
+
+  top: 0;
 
   /* todo: fix z-index-workaround */
   z-index: 1;
