@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link
+          rel="stylesheet"
+          href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+        /> -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=aguafina-script:400|roboto:400,900|vt323:400"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Kontakt</title>
+  </head>
+  <body>
+    <!-- ||| navigation ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||| navigation ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <nav class="nav nav--design">
+      <a href="../index.html"
+        ><img
+          class="logo logo--design"
+          src="../images/icons-svg/logo.svg"
+          alt="Café Rustica Logo"
+        />
+      </a>
+      <img
+        class="nav__burger-menu nav__burger-menu--design"
+        src="../images/icons-svg/burger-menu.svg"
+        alt="Navigationsmenü"
+      />
+      <div class="nav__option">
+        <a
+          class="nav__a--desktop nav__a-desktop--design"
+          href="../das-cafe/index.html"
+          >das Café</a
+        >
+        <a class="nav__a--desktop nav__a-desktop--design" href="index.html"
+          >Herkunft</a
+        >
+        <a class="nav__a--desktop nav__a-desktop--design" href="../#">Shop</a>
+        <img
+          class="shopping-basket shopping-basket--design"
+          src="../images/icons-svg/shopping-basket.svg"
+          alt="Warenkorb"
+        />
+      </div>
+
+      <!-- second possible option, ul or lean structure with img only prefered? -->
+      <!-- <ul class="nav__ul"> 
+        <li class="nav__ul_item nav__ul_item--#">icon</li>
+        <li class="nav__ul_item nav__ul_item--#">icon</li>
+      </ul> -->
+    </nav>
+
+    <!-- ||| header ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||| header ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <header class="blank-header"></header>
+
+    <!-- ||| main ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||| main ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <main class="section">
+      <h2>Du hast Fragen? Schreib uns gern!</h2>
+
+      <form class="contact__form" action="/user-data" method="post">
+        <label class="contact__label" for="name">Name*</label>
+        <input class="contact__input" type="text" name="user-name" id="name" />
+
+        <label class="contact__label" for="email">E-Mail*</label>
+        <input
+          class="contact__input"
+          type="email"
+          name="user-email"
+          id="email"
+        />
+
+        <label class="contact__label" for="phone-number">Telefonnummer</label>
+        <input
+          class="contact__input"
+          type="number"
+          name="user-phone-number"
+          id="phone-number"
+        />
+        <label for="your-topic">Dein Betreff</label>
+        <select name="your-topic" id="your-topic">
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+          <option value="audi">volvo</option>
+        </select>
+      </form>
+    </main>
+
+    <!-- ||| footer ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-- ||| footer ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <footer class="footer">
+      <img class="footer__icon" src="../images/icons-svg/logo.svg" alt="Logo" />
+
+      <!-- todo: swap some <p> with <a> -->
+      <div class="footer__info">
+        <div class="footer__company">
+          <p class="footer__brand-name">Rustica</p>
+          <p class="footer__sector">Café & Rösterei</p>
+        </div>
+
+        <div class="footer__details">
+          <div class="footer__address-container footer__elements">
+            <p class="footer__address-text">
+              Komm uns besuchen! Frauenhoferstr. 13, Kiel
+            </p>
+          </div>
+
+          <div class="footer__office-hours-container footer__elements">
+            <p class="footer__office-hours-text">
+              Mo – Fr 8–18 Uhr Sa 11–18 Uhr
+            </p>
+          </div>
+
+          <div class="footer__legal-notice-container footer__elements">
+            <a class="footer__a" href="../impressum/index.html">Impressum</a>
+            <a class="footer__a" href="../impressum/index.html">Datenschutz</a>
+          </div>
+
+          <div class="footer__subpages footer__elements">
+            <a class="footer__a" href="../das-cafe/index.html">Café</a>
+            <a class="footer__a" href="#">Shop</a>
+            <a class="footer__a" href="../die-herkunft/index.html">Herkunft</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
