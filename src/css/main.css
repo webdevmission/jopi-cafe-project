@@ -773,7 +773,7 @@
 /* using the css classes of codeline ~(638-#)  */
 
 .subpage-header--rustica-origin {
-  background-image: url(../images/img/harvest-coffee-beans.jpg);
+  background-image: url("../images/img/harvest-coffee-beans.jpg");
 }
 
 /* ||| rustica-origin-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
