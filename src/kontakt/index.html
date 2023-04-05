@@ -85,8 +85,15 @@
           name="user-phone-number"
           id="phone-number"
         />
-        <label for="your-topic">Dein Betreff</label>
-        <select name="your-topic" id="your-topic">
+        <label for="your-topic"></label>
+        <select
+          class="contact__input contact__select"
+          name="your-topic"
+          id="your-topic"
+        >
+          <option value="your-topic" disabled selected hidden>
+            Dein Betreff
+          </option>
           <option value="saab">Saab</option>
           <option value="fiat">Fiat</option>
           <option value="audi">Audi</option>
@@ -128,8 +135,9 @@
 
           <div class="footer__subpages footer__elements">
             <a class="footer__a" href="../das-cafe/index.html">Café</a>
-            <a class="footer__a" href="#">Shop</a>
+            <a class="footer__a" href="../#">Shop</a>
             <a class="footer__a" href="../die-herkunft/index.html">Herkunft</a>
+            <a class="footer__a" href="index.html">Kontakt</a>
           </div>
         </div>
       </div>

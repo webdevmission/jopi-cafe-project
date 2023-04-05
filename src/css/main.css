@@ -909,6 +909,16 @@
 
 /* using the css classes of codeline ~(483-#)  */
 
+.contact__select {
+  height: 47px;
+  border-radius: ;
+  appearance: none;
+  background-image: url(../images/icons-svg/right-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 47px;
+}
+
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* ||| legal-info |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* ||| legal-info |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
