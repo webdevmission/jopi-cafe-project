@@ -889,6 +889,14 @@
 /* ||| contact-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* ||| contact-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
+.contact-elements {
+  margin-top: 1.5rem;
+}
+
+.contact-elements--postion {
+  margin-bottom: 1.5rem;
+}
+
 .contact__form {
   width: 100%;
 }
@@ -904,20 +912,49 @@
 
   display: block;
 }
-/* ||| contact-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
-/* ||| contact-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
-/* using the css classes of codeline ~(483-#)  */
-
+/* todo: learn JS to install a optimal dropdown menu */
 .contact__select {
   height: 47px;
-  border-radius: ;
-  appearance: none;
+
   background-image: url(../images/icons-svg/right-arrow.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 47px;
+
+  border: 2px solid rgb(26, 26, 26);
+  border-radius: 5px;
+
+  appearance: none;
 }
+
+.contact__textarea {
+  width: 100%;
+
+  border: solid rgba(0, 0, 0, 0);
+  border-bottom: 2px solid #000000;
+
+  appearance: none;
+}
+
+/* using the css classes of codeline ~(115-#)  */
+/* todo: "abschicken" difference between firefox and chrome. Firefox looks blur.*/
+.button--contact {
+  background: rgb(26, 26, 26);
+
+  border: none;
+
+  font-family: inherit;
+
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* ||| contact-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| contact-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* using the css classes of codeline ~(483-#)  */
 
 /* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* ||| legal-info |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
