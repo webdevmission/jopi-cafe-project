@@ -1,6 +1,6 @@
 Questions for wednesday-session:
 
---Wie funktioniert BEM, es gibt irgendwie mehrere Ansätze? Montagssession dafür?
+
 
 --main.css<header: Wie funktioniert overlay?
 

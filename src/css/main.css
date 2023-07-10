@@ -9,9 +9,8 @@
 /* todo: classes like "article-info__h2--wohl-bauern" change modifier name */
 /* todo: integrate headlines like in html document */
 /* todo: before production, check and correct codeline number of global css classes */
-/* |||| homepage |||| */
 
-/* todo: create horizontal padding of 6.25rem for nav */
+/* |||| homepage |||| */
 
 /* || navigation || */
 /* nav position at top of page, consider to change to fixed/sticky  */
@@ -52,7 +51,7 @@
   }
 }
 
-/* todo: align nav_selection vertically */
+/* todo: align nav_selection vertically when used overlay for nav menu */
 .nav__option {
   display: none;
 }
@@ -81,9 +80,14 @@
 /* ||| homepage-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 .homepage-header {
-  /* do we need width: auto or 100%? */
+  /* do we need width: auto or 100%?
+   width: auto; will try as hard as possible
+   to keep an element the same width as its parent container when additional 
+   space is added from margins, padding, or borders. width: 100%; will make 
+   the element as wide as the parent container. Extra spacing will be added 
+   to the element's size without regards to the parent.*/
   height: 75vh;
-  width: 100%;
+  width: auto;
 
   color: var(--font-color-white);
 
