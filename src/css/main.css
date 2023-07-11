@@ -10,6 +10,7 @@
 /* todo: classes like "article-info__h2--wohl-bauern" change modifier name */
 /* todo: integrate headlines like in html document */
 /* todo: before production, check and correct codeline number of global css classes */
+/* todo: overhaul so called suffix -container and also basic rules in index.html in line 23. They are only existing in footer */
 
 /* |||| homepage |||| */
 
@@ -1035,12 +1036,12 @@
   }
 }
 
-.homepage-s-two__h2 {
+.shop__h2 {
   width: 15ch;
 }
 
 /* todo: calculate width in context to main__section-two padding (max-width) */
-.shop-preview {
+/* .shop-preview {
   width: 100%;
 
   display: flex;
@@ -1049,7 +1050,7 @@
   row-gap: 2.5rem;
 
   margin: 2.5rem 0;
-}
+} */
 
 @media (min-width: 1024px) {
   .shop-preview {
@@ -1057,9 +1058,9 @@
   }
 }
 
-.shop-preview__product {
+/* .shop-preview__product {
   width: calc(50% - 0.5rem);
-}
+} */
 
 @media (min-width: 1024px) {
   .shop-preview__product {
@@ -1067,37 +1068,23 @@
   }
 }
 
-.shop-preview__img {
-  background: rgb(255, 255, 255);
+.shop-preview__img--design {
+  background: rgb(232, 232, 232);
 }
 
-.shop-preview__product-name {
+/* .shop-preview__product-name {
   font-size: 1.125rem;
-}
+} */
 
-.shop-preview__product-price {
+/* .shop-preview__product-price {
   color: rgb(115, 115, 115);
-}
+} */
 
 /* todo: change svg-icon to bigger stroke-weight/size */
-.shop-preview__icon {
-  width: 1rem;
-  height: 1rem;
-  margin-top: 0.25rem;
-
-  filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(23%)
-    hue-rotate(325deg) brightness(104%) contrast(101%);
-
-  stroke-width: 4;
+.shop-preview__icon--design {
+  filter: brightness(0) saturate(100%);
 }
 
-.shop-preview__icon--position {
+/* .shop-preview__icon--position {
   margin: 0.25rem 0.25rem 0;
-}
-
-.button--homepage-s-two {
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  border: solid #ffffff;
-}
+} */
