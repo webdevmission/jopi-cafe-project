@@ -5,6 +5,7 @@
 /* ||##############||  */
 /* || global todos ||  */
 /* ||##############|| */
+/* todo: rework accessibility html */
 /* todo: rework comment headlines of CSS and HTML */
 /* todo: classes like "article-info__h2--wohl-bauern" change modifier name */
 /* todo: integrate headlines like in html document */
@@ -996,3 +997,107 @@
 /* ||| legal-info-footer |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 
 /* using the css classes of codeline ~(483-#)  */
+
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| shop |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| shop |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| shop |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| shop |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+/* ||#######################|| */
+/* || shop-navigation       || */
+/* ||#######################|| */
+
+/* ||| contact-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| contact-header |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+.blank-header--position {
+  height: 6.25rem;
+}
+/* ||| shop-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* ||| shop-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+/* using the css classes of codeline ~(252-335)  */
+
+.homepage-s-two {
+  background: rgb(26, 26, 26);
+  color: var(--font-color-white);
+
+  position: relative;
+
+  margin: 1.25 0;
+  padding: 3.75rem 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .homepage-s-two {
+    padding: 7.5rem 6.25rem;
+  }
+}
+
+.homepage-s-two__h2 {
+  width: 15ch;
+}
+
+/* todo: calculate width in context to main__section-two padding (max-width) */
+.shop-preview {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  row-gap: 2.5rem;
+
+  margin: 2.5rem 0;
+}
+
+@media (min-width: 1024px) {
+  .shop-preview {
+    margin: 5rem 0;
+  }
+}
+
+.shop-preview__product {
+  width: calc(50% - 0.5rem);
+}
+
+@media (min-width: 1024px) {
+  .shop-preview__product {
+    width: calc(25% - 0.75rem);
+  }
+}
+
+.shop-preview__img {
+  background: rgb(255, 255, 255);
+}
+
+.shop-preview__product-name {
+  font-size: 1.125rem;
+}
+
+.shop-preview__product-price {
+  color: rgb(115, 115, 115);
+}
+
+/* todo: change svg-icon to bigger stroke-weight/size */
+.shop-preview__icon {
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0.25rem;
+
+  filter: brightness(0) saturate(100%) invert(94%) sepia(94%) saturate(23%)
+    hue-rotate(325deg) brightness(104%) contrast(101%);
+
+  stroke-width: 4;
+}
+
+.shop-preview__icon--position {
+  margin: 0.25rem 0.25rem 0;
+}
+
+.button--homepage-s-two {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  border: solid #ffffff;
+}
