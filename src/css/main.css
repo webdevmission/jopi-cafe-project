@@ -1020,6 +1020,15 @@
 /* ||| shop-main |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
 /* using the css classes of codeline ~(252-335)  */
 
+.image-carousel {
+  margin: 5rem;
+}
+
+.carousel__img--design {
+  width: 15rem;
+  height: auto;
+}
+
 .homepage-s-two {
   background: rgb(26, 26, 26);
   color: var(--font-color-white);
